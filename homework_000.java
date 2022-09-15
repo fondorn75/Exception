@@ -25,12 +25,13 @@ class homework {
         int result = getArrayLength(firstArray);
 
         if (result == -1)
-            System.out.println("Длина массива меньше " + minArrayLength);
+            System.out.println(String.format("Длина массива меньше %s", minArrayLength));
+        ;
 
         if (result == -2)
             System.out.println("Длина массива 0");
 
         if (result >= minArrayLength)
-            System.out.println("Длина массива " + result);
+            System.out.println(String.format("Длина массива %s", result));
     }
 }
